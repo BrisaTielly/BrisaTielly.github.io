@@ -1,0 +1,143 @@
+.bicicleta-bg-n {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: url(/img/dec/top-right.svg) no-repeat top 40px right 20px;
+}
+
+.bicicleta-black-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.bicicletas-pre-img {
+  position: relative;
+}
+
+.bicicletas-pre-img span {
+  padding: 8px 16px 8px 8px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: var(--cor-12);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+}
+
+.bicicletas-img {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bicicletas-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.bicicletas-conteudo h2 {
+  align-self: center;
+  grid-column: 1/-1;
+}
+
+.bicicletas-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  margin-bottom: 8px;
+}
+
+.bicicletas-conteudo ul {
+  display: grid;
+  margin: 0px;
+  align-items: space-between;
+}
+
+.bicicletas-conteudo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bicicletas-conteudo li + li {
+  padding-top: 12px;
+}
+
+.bicicletas-conteudo li img {
+  height: 24px;
+  width: 24px;
+}
+
+.bicicletas-conteudo p {
+  grid-column: 1/-1;
+  max-width: 45ch;
+}
+
+.bicicletas-conteudo a {
+  place-self: end;
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seta::after {
+  background: url(/img/icones/seta.svg);
+  content: "";
+  width: 20px;
+  height: 10px;
+  display: inline-block;
+}
+
+.seta:hover::after {
+  transform: translateX(4px);
+}
+
+@media (max-width: 800px) {
+  .bicicletas-conteudo a {
+    font-size: 0.9rem;
+    padding: 12px 24px;
+    place-self: start;
+  }
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bicicleta-black-bg {
+    background: var(--cor-11);
+  }
+}
+
+@media (max-width: 600px) {
+  .bicicleta-bg-n {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .seta img {
+    display: none;
+  }
+
+  .bicicletas-conteudo a {
+    place-self: end;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicletas-conteudo a {
+    place-self: start;
+  }
+  .bicicletas-conteudo {
+    grid-template-columns: 1fr;
+  }
+}

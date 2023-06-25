@@ -1,0 +1,41 @@
+.nimbus-seguros-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0px 120px var(--cor-0), inset 0px -120px var(--cor-12);
+}
+
+.nimbus-seguros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.nimbus-seguros img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.nimbus-seguros-div {
+  align-self: center;
+  display: grid;
+  gap: 24px;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+@media (max-width: 600px) {
+  .nimbus-seguros-bg {
+    box-shadow: none;
+  }
+
+  .nimbus-seguros {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .nimbus-seguros-div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

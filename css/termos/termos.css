@@ -1,0 +1,45 @@
+.subhead-bg {
+  background-color: var(--cor-11);
+}
+
+.subhead {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: url(/img/dec/top-right.svg) no-repeat top 40px right 20px;
+}
+
+.condicoes {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.condicoes h2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.condicoes p {
+  padding-bottom: 32px;
+  max-width: 75ch;
+}
+
+@media (max-width: 600px) {
+  .condicoes {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .condicoes p {
+    padding-bottom: 24px;
+    font-size: 0.8rem;
+  }
+
+  .condicoes h2 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .subhead {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
